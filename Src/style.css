@@ -1,0 +1,141 @@
+/*************************************************************************/
+/*************************** GLOBAL STYLING ******************************/
+/*************************************************************************/
+
+
+
+/* ------------------GLOBAL MAIN STYLING ------------------ */
+
+
+:root{
+    /* Main Colors */
+}
+
+
+*{
+	/* Removes certain default style */
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+    background: none;
+	border: none;
+
+	/* Replaces certain default style */
+	box-sizing: border-box;
+}
+
+body{
+    /* background-color: ; */
+}
+
+html{
+    /* color: ; */
+}
+
+
+section{
+    /* Gap size underneath each section */
+    /* margin-bottom: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+
+    /* Overall side gutter size */
+    /* padding-inline: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+
+picture{
+    width: fit-content;
+    height: min-content;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* ------------------GLOBAL BUTTONS------------------ */
+
+
+/* Default Button Styling */
+
+button{
+    width: max-content;
+
+    /* Padding Sizes */
+    /* padding-inline: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    /* padding-block: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); *//* 
+    
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+/* Custom Button Stylings */
+
+
+/* ------------------GLOBAL TYPOGRAPGY------------------ */
+
+
+/* Default text Styling */
+
+h1, h2, h3{
+    
+}
+
+
+h1{
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+h2{
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+h3{
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+p{
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    /* Font Size */
+    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+}
+
+
+
+
+/* Custom text Styling */
+
+
+
+/*************************************************************************/
+/******************************* HEADER **********************************/
+/*************************************************************************/
+
+
+
+
+/*************************************************************************/
+/******************************* FOOTER **********************************/
+/*************************************************************************/
+
+
+
+
+/*************************************************************************/
+/*************************** COMMON STYLING ******************************/
+/*************************************************************************/
+
+
+
+
