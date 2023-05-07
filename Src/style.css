@@ -34,30 +34,31 @@
 }
 
 body{
-    /* background-color: ; */
+    background-color: var(--c-light);
 }
 
 html{
-    /* color: ; */
+    color: var(--c-dark);
 }
 
 
 section{
     /* Gap size underneath each section */
-    /* margin-bottom: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    margin-bottom: calc((50 /16 * 1rem) + ((150 - 50) * ((100vw - 320px) / (1920 - 320))));
 
     /* Overall side gutter size */
-    /* padding-inline: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    padding-inline: calc((20 /16 * 1rem) + ((160 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
 picture{
+    display: block;
     width: fit-content;
     height: min-content;
 }
 img{
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    /* height: 100%; */
     display: block;
 }
 
@@ -92,8 +93,10 @@ h1, h2, h3{
 
 
 h1{
+    font-family: comfortaa;
+    
     /* Font Size */
-    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    font-size: calc((20 /16 * 1rem) + ((65 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h2{
@@ -121,7 +124,22 @@ li{
 }
 
 
-
+@font-face {
+    font-family: comfortaa;
+    src: url(./Assets/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: amatic;
+    src: url(./Assets/AmaticSC-Regular.ttf);
+}
+@font-face {
+    font-family: amaticBold;
+    src: url(./Assets/AmaticSC-Bold.ttf);
+}
+@font-face {
+    font-family: openSans;
+    src: url(./Assets/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 
 /* Custom text Styling */
 
@@ -131,7 +149,10 @@ li{
 /******************************* HEADER **********************************/
 /*************************************************************************/
 
-
+header{
+    height: calc((60 /16 * 1rem) + ((220 - 60) * ((100vw - 320px) / (1920 - 320))));
+    width: 100%;
+}
 
 
 /*************************************************************************/
