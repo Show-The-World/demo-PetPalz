@@ -9,6 +9,15 @@
 
 :root{
     /* Main Colors */
+    --c-light: #f7f7f7;
+    --c-dark: #1b1311;
+    --c-green: #7cf8ba;
+    --c-greenDark: #076034;
+    --c-red: #f88e8e;
+    --c-redDark: #a60c0c;
+    --c-blue: #a3d2ee;
+    --c-blueDark: #035297;
+    --c-grey: #d2d2d2;
 }
 
 
