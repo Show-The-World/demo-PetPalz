@@ -4,3 +4,84 @@
     font-weight: 500;
     font-size: calc((20 /16 * 1rem) + ((35 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    row-gap: calc((65 /16 * 1rem) + ((100 - 65) * ((100vw - 320px) / (1920 - 320))));
+}
+.services-card{
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    gap: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+    align-items: center;
+}
+.services-img{
+    width: calc((200 /16 * 1rem) + ((280 - 200) * ((100vw - 320px) / (1920 - 320))))   ;
+}
+
+
+
+
+.animals > h2{
+    text-align: center;
+    margin-bottom: calc((30 /16 * 1rem) + ((30 - 30) * ((100vw - 320px) / (1920 - 320))));
+}
+.animals-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: calc((100 /16 * 1rem) + ((160 - 100) * ((100vw - 320px) / (1920 - 320))));
+}
+.animals-card{
+    flex: 1;
+
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: calc((20 /16 * 1rem) + ((20 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+.animals-subContainer{
+    background-color: white;
+    padding: calc((10 /16 * 1rem) + ((50 - 10) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: calc((30 /16 * 1rem) + ((55 - 30) * ((100vw - 320px) / (1920 - 320))));
+
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--c-grey); 
+    box-shadow: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--c-grey);
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: calc((20 /16 * 1rem) + ((20 - 20) * ((100vw - 320px) / (1920 - 320))));
+    width: calc((280 /16 * 1rem) + ((500 - 280) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.animals-subContainer h3{
+    text-align: center;
+}
+
+.animals-backsplash{
+    position: relative;
+    width: calc((200 /16 * 1rem) + ((350 - 200) * ((100vw - 320px) / (1920 - 320))));
+}
+.animals-img{
+    position: absolute;
+    z-index: 2;
+}
+
+
+.about-container{
+    flex-basis: 300px;
+}
+.about{
+    padding-inline: calc((20 /16 * 1rem) + ((240 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+    gap: calc((30 /16 * 1rem) + ((150 - 30) * ((100vw - 320px) / (1920 - 320))));
+}
+.about-img1{
+    width: calc((280 /16 * 1rem) + ((800 - 280) * ((100vw - 320px) / (1920 - 320))));
+}

@@ -44,22 +44,21 @@ html{
 
 section{
     /* Gap size underneath each section */
-    margin-bottom: calc((50 /16 * 1rem) + ((150 - 50) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((150 /16 * 1rem) + ((250 - 150) * ((100vw - 320px) / (1920 - 320))));
 
     /* Overall side gutter size */
-    padding-inline: calc((20 /16 * 1rem) + ((160 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-inline: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
 picture{
     display: block;
-    width: fit-content;
     height: min-content;
 }
 img{
     width: 100px;
-    /* height: 100%; */
     display: block;
+    margin: auto;
 }
 
 
@@ -78,20 +77,21 @@ button, .a-button{
     border-radius: 200px;
 
     /* Padding Sizes */
-    padding-inline: calc((8 /16 * 1rem) + ((30 - 8) * ((100vw - 320px) / (1920 - 320))));
-    padding-block: calc((5 /16 * 1rem) + ((12 - 5) * ((100vw - 320px) / (1920 - 320))));/* 
+    padding-inline: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-block: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));/* 
     
     /* Font Size */
     /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
 }
 .a-button::before{
+
     display: inline-block;
     content: '';
     background-image: url(./Assets/icon-check.svg);
     background-size: cover;
 
-    width: 20px;
-    height: 20px;
+    width: calc((12 /16 * 1rem) + ((20 - 12) * ((100vw - 320px) / (1920 - 320))));
+    height: calc((12 /16 * 1rem) + ((20 - 12) * ((100vw - 320px) / (1920 - 320))));
 
     margin-right: 16px;
 }
@@ -144,16 +144,15 @@ h3{
     font-family: amaticBold;
 
     /* Font Size */
-    font-size: calc((20 /16 * 1rem) + ((58 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((34 /16 * 1rem) + ((58 - 34) * ((100vw - 320px) / (1920 - 320))));
 }
 
 p, .a-button{
 
     font-family: opensans;
-    font-weight: 400;
 
     /* Font Size */
-    font-size: calc((15 /16 * 1rem) + ((24 - 15) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((15 /16 * 1rem) + ((26 - 15) * ((100vw - 320px) / (1920 - 320))));
 }
 
 ul{
@@ -181,11 +180,6 @@ ul{
 
 /* Custom text Styling */
 
-.divider-text{
-    font-family: amatic;
-    font-size: calc((12 /16 * 1rem) + ((32 - 12) * ((100vw - 320px) / (1920 - 320))));
-}
-
 
 
 /*************************************************************************/
@@ -210,5 +204,46 @@ header{
 /*************************************************************************/
 
 
+.--split{
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.--split > *{
+    flex: 1;
+}
+
+
+.--spread{
+    display: flex;
+    flex-direction: column;
+    gap: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+}
+
+
+
+
+.divider-text{
+    font-family: amatic;
+    font-size: calc((12 /16 * 1rem) + ((32 - 12) * ((100vw - 320px) / (1920 - 320))));
+}
+.--s-divider{
+    margin: auto;
+
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    gap: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+    
+    margin-bottom: calc((70 /16 * 1rem) + ((170 - 70) * ((100vw - 320px) / (1920 - 320))));
+}
+.divider-line{
+    background-color: var(--c-dark);
+    flex: 1;
+    height: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
+}
 
 
