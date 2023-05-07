@@ -68,19 +68,52 @@ img{
 
 /* Default Button Styling */
 
-button{
+button, .a-button{
+    display: block;
+
     width: max-content;
 
+    color: var(--c-light);
+    font-weight: 700;
+    border-radius: 200px;
+
     /* Padding Sizes */
-    /* padding-inline: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
-    /* padding-block: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); *//* 
+    padding-inline: calc((8 /16 * 1rem) + ((30 - 8) * ((100vw - 320px) / (1920 - 320))));
+    padding-block: calc((5 /16 * 1rem) + ((12 - 5) * ((100vw - 320px) / (1920 - 320))));/* 
     
     /* Font Size */
     /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
 }
+.a-button::before{
+    display: inline-block;
+    content: '';
+    background-image: url(./Assets/icon-check.svg);
+    background-size: cover;
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 16px;
+}
 
 /* Custom Button Stylings */
+.--b-red{
+    background-color: var(--c-redDark);
+}
+.--b-green{
+    background-color: var(--c-greenDark);
+}
+.--b-blue{
+    background-color: var(--c-blueDark);
+}
 
+.learnMore{
+    color: var(--c-dark);
+    font-family: comfortaa;
+    font-weight: lighter;
+    font-size: calc((15 /16 * 1rem) + ((20 - 15) * ((100vw - 320px) / (1920 - 320))));
+    text-decoration: underline;
+}
 
 /* ------------------GLOBAL TYPOGRAPGY------------------ */
 
@@ -96,32 +129,37 @@ h1{
     font-family: comfortaa;
     
     /* Font Size */
-    font-size: calc((20 /16 * 1rem) + ((65 - 20) * ((100vw - 320px) / (1920 - 320))));
+    font-size: calc((30 /16 * 1rem) + ((65 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h2{
+    font-family: comfortaa;
+    font-weight: 400;
+
     /* Font Size */
-    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    font-size: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 h3{
+    font-family: amaticBold;
+
     /* Font Size */
-    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    font-size: calc((20 /16 * 1rem) + ((58 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
-p{
+p, .a-button{
+
+    font-family: opensans;
+    font-weight: 400;
+
     /* Font Size */
-    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
+    font-size: calc((15 /16 * 1rem) + ((24 - 15) * ((100vw - 320px) / (1920 - 320))));
 }
 
 ul{
     list-style: none;
 }
 
-li{
-    /* Font Size */
-    /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
-}
 
 
 @font-face {
@@ -142,6 +180,11 @@ li{
 }
 
 /* Custom text Styling */
+
+.divider-text{
+    font-family: amatic;
+    font-size: calc((12 /16 * 1rem) + ((32 - 12) * ((100vw - 320px) / (1920 - 320))));
+}
 
 
 
