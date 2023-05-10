@@ -1,3 +1,28 @@
+.hero{
+    display: flex;
+    align-items: center;
+}
+.hero-container{
+    flex: 1;
+}
+.hero-image{
+    transform: translateX(calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320)))));
+    width: calc((200 /16 * 1rem) + ((950 - 200) * ((100vw - 320px) / (1920 - 320))));
+
+    position: relative;
+}
+.hero-img{    
+    position: absolute;
+
+    width: 35%;
+    right: 25%;
+    top: 12%;
+}
+
+.hero-mask{
+    position: absolute;
+}
+
 
 .services-h3{
     font-family: comfortaa;
@@ -71,17 +96,18 @@
 .animals-img{
     position: absolute;
     z-index: 2;
+
+    width: 100px;
 }
 
 
-.about-container{
-    flex-basis: 300px;
-}
-.about{
-    padding-inline: calc((20 /16 * 1rem) + ((240 - 20) * ((100vw - 320px) / (1920 - 320))));
 
-    gap: calc((30 /16 * 1rem) + ((150 - 30) * ((100vw - 320px) / (1920 - 320))));
-}
-.about-img1{
-    width: calc((280 /16 * 1rem) + ((800 - 280) * ((100vw - 320px) / (1920 - 320))));
+
+
+
+
+
+
+.footer-icon{
+    width: 20px;
 }
