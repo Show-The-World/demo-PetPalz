@@ -44,21 +44,16 @@ html{
 
 section{
     /* Gap size underneath each section */
-    margin-bottom: calc((150 /16 * 1rem) + ((250 - 150) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((150 /16 * 1rem) + ((400 - 150) * ((100vw - 320px) / (1920 - 320))));
 
     /* Overall side gutter size */
     padding-inline: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
-picture{
-    display: block;
-    height: min-content;
-}
 img{
-    width: 100%;
+    max-width: 100%;
     display: block;
-    margin: auto;
 }
 
 
@@ -147,7 +142,7 @@ h3{
     font-size: calc((34 /16 * 1rem) + ((58 - 34) * ((100vw - 320px) / (1920 - 320))));
 }
 
-p, .a-button{
+p, .a-button, li{
 
     font-family: opensans;
 
@@ -206,12 +201,25 @@ header{
 
 
 
-/* .--spread{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
+.--spread > *:not(:last-child){
+    margin-bottom: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
+}
 
+.--li-spread > *:not(:last-child){
+    margin-bottom: calc((13 /16 * 1rem) + ((25 - 13) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.--split{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.--split2{
+    display: grid;
+    gap: calc((30 /16 * 1rem) + ((160 - 30) * ((100vw - 320px) / (1920 - 320))));
+    grid-template-columns: 1fr 1fr;
+}
 
 
 
@@ -234,14 +242,4 @@ header{
     background-color: var(--c-dark);
     flex: 1;
     height: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
-}
-
-
-
-
-.--spread{
-    display: flex;
-    flex-direction: column;
-
-    gap: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
