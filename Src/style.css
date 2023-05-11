@@ -194,6 +194,49 @@ header{
 
 
 
+footer{
+    background-color: #cbe0ed;
+    padding: calc((50 /16 * 1rem) + ((150 - 50) * ((100vw - 320px) / (1920 - 320)))) 0;
+}
+
+footer > *{
+    margin: auto;
+}
+
+.footer-nav{
+    margin-bottom: calc((40 /16 * 1rem) + ((90 - 40) * ((100vw - 320px) / (1920 - 320))));
+}
+.footer-a{
+    display: block;
+
+    color: #1b1311;
+    font-family: amatic;
+    text-align: center;
+    font-size: calc((25 /16 * 1rem) + ((45 - 25) * ((100vw - 320px) / (1920 - 320))));
+    font-weight: 500;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-icon{
+    display: inline-block;
+    width: calc((24 /16 * 1rem) + ((50 - 24) * ((100vw - 320px) / (1920 - 320))));
+}
+
+@media screen and (min-width: 600px) {
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        gap: calc((20 /16 * 1rem) + ((50 - 20) * ((100vw - 320px) / (1920 - 320))));
+        width: calc((200 /16 * 1rem) + ((600 - 200) * ((100vw - 320px) / (1920 - 320))));
+    }
+}
+
+
 /*************************************************************************/
 /*************************** COMMON STYLING ******************************/
 /*************************************************************************/
@@ -202,7 +245,7 @@ header{
 
 
 .--spread > *:not(:last-child){
-    margin-bottom: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((25 /16 * 1rem) + ((60 - 25) * ((100vw - 320px) / (1920 - 320))));
 }
 
 .--li-spread > *:not(:last-child){
