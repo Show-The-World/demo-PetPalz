@@ -8,8 +8,10 @@
     width: calc((280 /16 * 1rem) + ((950 - 280) * ((100vw - 320px) / (1920 - 320))));
 
     position: relative;
-
-
+}
+.hero-backsplash{
+    /* margin-left: auto; */
+    width: 100%;
 }
 .hero-img{
     z-index: 2;
