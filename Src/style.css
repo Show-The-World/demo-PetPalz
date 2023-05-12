@@ -312,30 +312,26 @@ footer > *{
 }
 
 .form-infoCard{
-    background-image: url(./Assets/contact-bg.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 0px;
-    
+    background-color: #63b5e5;
     padding: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
-    padding-bottom: 148.37%;
+
+    border-radius: calc((10 /16 * 1rem) + ((40 - 10) * ((100vw - 320px) / (1920 - 320))));
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+form *{
+    display: block;
 }
 
 .form-box{
     width: 100%;
-    height: 5.5%;
+    height: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
 
     border-style: solid;
     border-width: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
     border-color: var(--c-blue);
-    border-radius: calc((10 /16 * 1rem) + ((14 - 10) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: calc((7 /16 * 1rem) + ((14 - 7) * ((100vw - 320px) / (1920 - 320))));
 
-    margin-bottom: calc((15 /16 * 1rem) + ((70 - 15) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((30 /16 * 1rem) + ((70 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
 
 label{
@@ -352,6 +348,19 @@ label{
 }
 
 .form-messageBox{
-    flex: 1;
+    height: calc((130 /16 * 1rem) + ((200 - 130) * ((100vw - 320px) / (1920 - 320))));
 }
 
+
+@media screen and (max-width: 1100px) {
+    .form-infoCard{
+        padding: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
+        height: max-content;
+
+        margin-bottom: calc((40 /16 * 1rem) + ((200 - 40) * ((100vw - 320px) / (1920 - 320))));
+    }
+
+    .form-container{
+        display: block;
+    }
+}
