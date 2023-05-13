@@ -68,60 +68,6 @@
 
 
 
-.animals > h2{
-    text-align: center;
-    margin-bottom: calc((30 /16 * 1rem) + ((30 - 30) * ((100vw - 320px) / (1920 - 320))));
-}
-.animals-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.animals-card{
-    flex: 1;
-}
-.animals-subContainer{
-    margin: auto;
-    
-    background-color: white;
-    padding: calc((10 /16 * 1rem) + ((50 - 10) * ((100vw - 320px) / (1920 - 320))));
-    border-radius: calc((30 /16 * 1rem) + ((55 - 30) * ((100vw - 320px) / (1920 - 320))));
-
-    -webkit-box-shadow: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--c-grey); 
-    box-shadow: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--c-grey);
-    
-    width: calc((280 /16 * 1rem) + ((500 - 280) * ((100vw - 320px) / (1920 - 320))));
-}
-
-.animals-subContainer h3{
-    text-align: center;
-}
-.animals-image{
-    margin: auto;
-    position: relative;
-    margin-bottom: calc((25 /16 * 1rem) + ((70 - 25) * ((100vw - 320px) / (1920 - 320))));
-    margin-top: calc((100 /16 * 1rem) + ((200 - 100) * ((100vw - 320px) / (1920 - 320))));
-    
-    width: calc((200 /16 * 1rem) + ((400 - 200) * ((100vw - 320px) / (1920 - 320))));
-    height: calc((200 /16 * 1rem) + ((400 - 200) * ((100vw - 320px) / (1920 - 320))));
-}
-.animals-backsplash{
-    position: absolute;
-    width: 100%;
-}
-.animals-img{
-    position: absolute;
-    z-index: 2;
-
-    width: 100%;
-    top: -30%;
-    height: auto;
-}
-.animals-img-lizard,.animals-img-parrot, .animals-img-fish{
-    top: 10%;
-}
-
-
 
 .love{
     align-items: flex-start;
@@ -188,9 +134,6 @@
 
 
 
-
-.abt{
-}
 
 .about-heading{
     position: relative;
