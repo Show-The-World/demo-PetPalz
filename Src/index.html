@@ -33,6 +33,22 @@
     <!------------------------------ HEADER SECTION ------------------------------>
     <!---------------------------------------------------------------------------->
     <header>
+        <img class="header-logo" src="./Assets/" alt="">
+
+        <label class="header-label" for="hamburger">
+            <div class="header-hamburger-button"></div>
+        </label>
+        <input type="checkbox" class="header-hamburger-checkbox" name="hamburger" id="hamburger">
+        <nav class="header-nav">
+            <ul>
+                <li><a class="header-button" href="">Home</a></li>
+                <li><a class="header-button" href="">About</a></li>
+                <li><a class="header-button" href="">Service</a></li>
+                <li><a class="header-button" href="">Testimonials</a></li>
+                <li><a class="header-button" href="">Contact</a></li>
+                <li><a class="header-button get Started" href="">Get Started</a></li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -116,8 +132,8 @@
 
             <div class="animals-card">
                 <div class="animals-image">
-                    <img class="animals-img" src="./Assets/animals-dog.png" alt="">
-                    <img src="./Assets/animals-dog.svg" alt="" class="animals-backsplash">
+                    <img class="animals-img animals-img-cat" src="./Assets/animals-cat.png" alt="">
+                    <img src="./Assets/animals-cat.svg" alt="" class="animals-backsplash">
                 </div>
                 <div class="animals-subContainer --spread">
                     <h3>Dogs</h3>
@@ -133,8 +149,8 @@
 
             <div class="animals-card">
                 <div class="animals-image">
-                    <img class="animals-img" src="./Assets/animals-dog.png" alt="">
-                    <img src="./Assets/animals-dog.svg" alt="" class="animals-backsplash">
+                    <img class="animals-img animals-img-lizard" src="./Assets/animals-lizard.png" alt="">
+                    <img src="./Assets/animals-lizard.svg" alt="" class="animals-backsplash">
                 </div>
                 <div class="animals-subContainer --spread">
                     <h3>Dogs</h3>
@@ -150,8 +166,8 @@
 
             <div class="animals-card">
                 <div class="animals-image">
-                    <img class="animals-img" src="./Assets/animals-dog.png" alt="">
-                    <img src="./Assets/animals-dog.svg" alt="" class="animals-backsplash">
+                    <img class="animals-img animals-img-hamster" src="./Assets/animals-hamster.png" alt="">
+                    <img src="./Assets/animals-hamster.svg" alt="" class="animals-backsplash">
                 </div>
                 <div class="animals-subContainer --spread">
                     <h3>Dogs</h3>
@@ -167,8 +183,8 @@
 
             <div class="animals-card">
                 <div class="animals-image">
-                    <img class="animals-img" src="./Assets/animals-dog.png" alt="">
-                    <img src="./Assets/animals-dog.svg" alt="" class="animals-backsplash">
+                    <img class="animals-img animals-img-parrot" src="./Assets/animals-parrot.png" alt="">
+                    <img src="./Assets/animals-parrot.svg" alt="" class="animals-backsplash">
                 </div>
                 <div class="animals-subContainer --spread">
                     <h3>Dogs</h3>
@@ -184,8 +200,8 @@
 
             <div class="animals-card">
                 <div class="animals-image">
-                    <img class="animals-img" src="./Assets/animals-dog.png" alt="">
-                    <img src="./Assets/animals-dog.svg" alt="" class="animals-backsplash">
+                    <img class="animals-img animals-img-fish" src="./Assets/animals-fish.png" alt="">
+                    <img src="./Assets/animals-fish.svg" alt="" class="animals-backsplash">
                 </div>
                 <div class="animals-subContainer --spread">
                     <h3>Dogs</h3>
@@ -214,7 +230,7 @@
             <img class="love-img love-3" src="./Assets/love-3.jpg" alt="">
         </div>
         <div class="love-container --spread">
-            <h2>Animal Siting With Love</h2>
+            <h2 class="love-h2">Animal Siting With Love</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione aperiam maiores natus illum vero placeat voluptates laborum delectus suscipit quaerat pariatur quo voluptas voluptate totam dolore quas minima animi distinctio, aliquam error architecto autem repudiandae!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam accusantium tenetur nobis nam iusto sequi quas, optio ipsam culpa sapiente exercitationem molestiae perferendis, ab, rerum dicta. Sit neque placeat sint nemo quo minima nobis dolores, blanditiis voluptatum? Nesciunt repellendus assumenda repellat eum illo minima dolore eveniet quod minus.</p>
             <a class="a-button --b-red">Book Now</a>
         </div>
@@ -222,34 +238,42 @@
 
 
 
-    <section class="about-heading">
-        <h2>About Us</h2>
-    </section>
+        <article class="abt">
+            <h2 class="about-heading">About Us</h2>
+            
+                <section class="about --split2">
+            <div class="about-container about-container1 --spread">
+                <h3>We Love Animals!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laboriosam, quasi nobis aspernatur nemo  beatae exercitationem minima?</p>
+                <a class="a-button --b-green">Learn More</a>
+            </div>
+            <picture>
+                <source srcset="./Assets/about-1.jpg" media="(min-width:761px)">
+                <source srcset="./Assets/about-1-2.jpg">
+                <img class="about-img1" src="./Assets/about-1.jpg" alt="">
+            </picture>
+            
+                </section>
+            
+                <section class="about --split2">
+            <picture>
+                <source srcset="./Assets/about-2.jpg" media="(min-width:761px)">
+                <source srcset="./Assets/about-2-2.jpg">
+                <img class="about-img1" src="./Assets/about-2.jpg" alt="">
+            </picture>
+            
+            <div class="about-container about-container2 --spread">
+                <h3>We Love Animals!</h3>
+                <p> quod, a et aperiam maxime nobis facilis at ab laboriosam quaerat numquam repellat consequuntur explicabo culpa ut enim reiciendis beatae exercitationem minima?</p>
+                <a class="a-button --b-green">Learn More</a>
+            </div>
+                </section>
+        </article>
 
-    <section class="about --split2">
-        <div class="about-container about-container1 --spread">
-            <h3>We Love Animals!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laboriosam, quasi nobis aspernatur nemo  beatae exercitationem minima?</p>
-            <a class="a-button --b-green">Learn More</a>
-        </div>
-        <img class="about-img1" src="./Assets/about-1.jpg" alt="">
+
+    <section class="aboutImages">
         
-    </section>
-
-    <section class="about --split2">
-        <img class="about-img1" src="./Assets/about-2.jpg" alt="">
-        
-        <div class="about-container about-container2 --spread">
-            <h3>We Love Animals!</h3>
-            <p> quod, a et aperiam maxime nobis facilis at ab laboriosam quaerat numquam repellat consequuntur explicabo culpa ut enim reiciendis beatae exercitationem minima?</p>
-            <a class="a-button --b-green">Learn More</a>
-        </div>
-    </section>
-
-
-    <!-- <section class="aboutImages">
-        
-            <img class="about-img2 aboutIMG1" src="./Assets/about-3.jpg" alt="">
+            <!-- <img class="about-img2 aboutIMG1" src="./Assets/about-3.jpg" alt="">
         
         
             <img class="about-img2 aboutIMG2" src="./Assets/about-4.jpg" alt="">
@@ -258,9 +282,9 @@
             <img class="about-img2 aboutIMG3" src="./Assets/about-5.jpg" alt="">
         
         
-            <img class="about-img2 aboutIMG4" src="./Assets/about-6.jpg" alt="">
+            <img class="about-img2 aboutIMG4" src="./Assets/about-6.jpg" alt=""> -->
         
-    </section> -->
+    </section>
 
 
     <section class="form">

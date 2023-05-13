@@ -41,13 +41,18 @@ html{
     color: var(--c-dark);
 }
 
+body, html{
+    /* max-width: 100%;
+    overflow-x: hidden; */
+}
+
 
 section{
     /* Gap size underneath each section */
     margin-bottom: calc((150 /16 * 1rem) + ((400 - 150) * ((100vw - 320px) / (1920 - 320))));
 
     /* Overall side gutter size */
-    padding-inline: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding:0  calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
 }
 
 
@@ -72,8 +77,7 @@ button, .a-button{
     border-radius: 200px;
 
     /* Padding Sizes */
-    padding-inline: calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
-    padding-block: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320))));/* 
+    padding: calc((8 /16 * 1rem) + ((12 - 8) * ((100vw - 320px) / (1920 - 320)))) calc((20 /16 * 1rem) + ((30 - 20) * ((100vw - 320px) / (1920 - 320))));
     
     /* Font Size */
     /* font-size: calc((min /16 * 1rem) + ((max - min) * ((100vw - 320px) / (1920 - 320)))); */
@@ -232,7 +236,12 @@ ul{
 
 
 
+.about-img1, .about-img2{
+    border-radius: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320))));
 
+    filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.6));
+    -webkit-filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 06));
+}
 
 
 
@@ -244,9 +253,95 @@ ul{
 /*************************************************************************/
 
 header{
-    height: calc((60 /16 * 1rem) + ((220 - 60) * ((100vw - 320px) / (1920 - 320))));
+    padding:0  calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
     width: 100%;
+    height: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--c-light);
+    
+    display: flex;
+    z-index: 3;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
 }
+.header-hamburger-button{
+    width: calc((22 /16 * 1rem) + ((70 - 22) * ((100vw - 320px) / (1920 - 320))));
+    height: calc((3 /16 * 1rem) + ((10 - 3) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--c-dark);
+    position: relative;
+}
+.header-hamburger-button::before{
+    right: 0;
+    position: absolute;
+    content: '';
+    top: 200%;
+    width: 70%;
+    height: calc((3 /16 * 1rem) + ((10 - 3) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--c-dark);
+}
+.header-hamburger-button::after{
+    right: 0;
+    position: absolute;
+    content: '';
+    bottom: 200%;
+    width: 70%;
+    height: calc((3 /16 * 1rem) + ((10 - 3) * ((100vw - 320px) / (1920 - 320))));
+    background-color: var(--c-dark);
+}
+
+
+.header-nav{
+    z-index: 3;
+    position: fixed;
+    display: none;
+
+    top: calc((60 /16 * 1rem) + ((140 - 60) * ((100vw - 320px) / (1920 - 320))) - 2px);
+    right: 0;
+    bottom: 0;
+    padding-left: calc((30 /16 * 1rem) + ((20 - 30) * ((100vw - 320px) / (1920 - 320))));
+    padding-right: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+    background-color: var(--c-light);
+
+    text-align: right;
+}
+.header-nav > ul > *:not(:last-child){
+    margin-bottom: calc((10 /16 * 1rem) + ((60 - 10) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.header-hamburger-checkbox{
+    display: none;
+}
+.header-hamburger-checkbox:checked ~ .header-nav{
+    display: block;
+}
+
+
+@media screen and (min-width:950px) {
+    .header-nav{
+        display: inline-block;
+        position: static;
+        padding: 0;
+    }
+    .header-nav *{
+        display: inline-block;
+        margin-bottom: 0;
+    
+        font-family: comfortaa;
+        color: var(--c-dark);
+    }
+    .header-label{
+        display: none;
+    }
+    .header-nav > ul > *:not(:last-child){
+        margin-bottom: 0;
+        margin-right: calc((10 /16 * 1rem) + ((60 - 10) * ((100vw - 320px) / (1920 - 320))));
+    }
+}
+
 
 
 /*************************************************************************/
@@ -352,7 +447,7 @@ label{
 }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
     .form-infoCard{
         padding: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
         height: max-content;
