@@ -291,17 +291,20 @@ header{
     height: calc((3 /16 * 1rem) + ((10 - 3) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-dark);
 }
-
+.header-nav * {
+    font-family: comfortaa;
+    color: var(--c-dark);
+}
 
 .header-nav{
     z-index: 3;
     position: fixed;
     display: none;
 
-    top: calc((60 /16 * 1rem) + ((140 - 60) * ((100vw - 320px) / (1920 - 320))) - 2px);
+    top: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))) - 2px);
     right: 0;
     bottom: 0;
-    padding-left: calc((30 /16 * 1rem) + ((20 - 30) * ((100vw - 320px) / (1920 - 320))));
+    padding-left: calc((30 /16 * 1rem) + ((100 - 30) * ((100vw - 320px) / (1920 - 320))));
     padding-right: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
 
     background-color: var(--c-light);
@@ -329,9 +332,6 @@ header{
     .header-nav *{
         display: inline-block;
         margin-bottom: 0;
-    
-        font-family: comfortaa;
-        color: var(--c-dark);
     }
     .header-label{
         display: none;
