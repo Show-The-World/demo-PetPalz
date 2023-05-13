@@ -8,6 +8,10 @@
 
 
 :root{
+    --sidePadding: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    --sectionMargin: calc((150 /16 * 1rem) + ((400 - 150) * ((100vw - 320px) / (1920 - 320))));
+
+
     /* Main Colors */
     --c-light: #f7f7f7;
     --c-dark: #1b1311;
@@ -49,10 +53,10 @@ body, html{
 
 section{
     /* Gap size underneath each section */
-    margin-bottom: calc((150 /16 * 1rem) + ((400 - 150) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: var(--sectionMargin);
 
     /* Overall side gutter size */
-    padding:0  calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding:0  var(--sidePadding);
 }
 
 
@@ -253,7 +257,7 @@ ul{
 /*************************************************************************/
 
 header{
-    padding:0  calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding:0  var(--sidePadding);
     width: 100%;
     height: calc((60 /16 * 1rem) + ((100 - 60) * ((100vw - 320px) / (1920 - 320))));
     background-color: var(--c-light);
@@ -305,7 +309,7 @@ header{
     right: 0;
     bottom: 0;
     padding-left: calc((30 /16 * 1rem) + ((100 - 30) * ((100vw - 320px) / (1920 - 320))));
-    padding-right: calc((20 /16 * 1rem) + ((120 - 20) * ((100vw - 320px) / (1920 - 320))));
+    padding-right: var(--sidePadding);
 
     background-color: var(--c-light);
 
@@ -342,6 +346,29 @@ header{
     }
 }
 
+
+
+
+.subHero-h1{
+    position: relative;
+    height: min-content;
+    width: max-content;
+    margin: auto;
+
+    font-family: comfortaa;
+    color: var(--c-light);
+    font-size: calc((25 /16 * 1rem) + ((130 - 25) * ((100vw - 320px) / (1920 - 320))));
+}
+.subHero-filter{
+    position: absolute;
+}
+.subHero{
+    display: flex;
+    height: calc((175 /16 * 1rem) + ((600 - 175) * ((100vw - 320px) / (1920 - 320))));
+    background-color: brown;
+
+    filter: grayscale(0.6);
+}
 
 
 /*************************************************************************/
@@ -458,4 +485,34 @@ label{
     .form-container{
         display: block;
     }
+}
+
+
+
+
+.splitContainer{    
+    flex: 1;
+    flex-basis: 260px;
+}
+
+.splitContainer-h2{
+    position: relative;
+    margin-top: 40px;
+}
+
+.splitContainer-h2::before{
+    z-index: -1;
+    position: absolute;
+    content: '';
+
+    border-top-left-radius: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320))));
+    border-bottom-left-radius: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320))));
+    filter: opacity(0.6);
+    
+    background-color: var(--c-red);
+    left: calc(-1 * ((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))));
+    top: calc(-1 * ((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))));
+    bottom: calc(-1 *((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))));
+    
+    right: calc(-1 * var(--sidePadding));
 }
