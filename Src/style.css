@@ -296,6 +296,7 @@ header{
     background-color: var(--c-dark);
 }
 .header-nav * {
+    font-size: calc((18 /16 * 1rem) + ((20 - 18) * ((100vw - 320px) / (1920 - 320))));
     font-family: comfortaa;
     color: var(--c-dark);
 }
@@ -329,18 +330,30 @@ header{
 .selected{
     position: relative;
 }
-.selected::before{
-    content: url(./Assets/header-highlight.svg);
+.selected::before {
+    content: "";
     position: absolute;
+    display: inline-block;
     z-index: -1;
-
+  
+    background-image: url(./Assets/header-highlight.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+    height: 250%;
+    width: 150%;
+  
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+.header-logo{
+    width: calc((100 /16 * 1rem) + ((250 - 100) * ((100vw - 320px) / (1920 - 320))));   
 }
 
-
-@media screen and (min-width:950px) {
+@media screen and (min-width:1000px) {
     .header-nav{
         display: inline-block;
         position: static;
@@ -357,7 +370,8 @@ header{
         margin-bottom: 0;
         margin-right: calc((10 /16 * 1rem) + ((60 - 10) * ((100vw - 320px) / (1920 - 320))));
     }
-}
+
+
 
 
 
