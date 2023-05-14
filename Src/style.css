@@ -370,7 +370,7 @@ header{
         margin-bottom: 0;
         margin-right: calc((10 /16 * 1rem) + ((60 - 10) * ((100vw - 320px) / (1920 - 320))));
     }
-
+}
 
 
 
@@ -603,5 +603,5 @@ label{
 }
 
 .animals li{
-    list-style: circles;
+    list-style: circle;
 }
