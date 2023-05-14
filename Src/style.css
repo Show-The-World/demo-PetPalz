@@ -386,15 +386,26 @@ header{
     color: var(--c-light);
     font-size: calc((25 /16 * 1rem) + ((130 - 25) * ((100vw - 320px) / (1920 - 320))));
 }
-.subHero-filter{
+.subHero-img{
+    object-fit: fill;
+    /* object-position: center; */
+
     position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
 }
 .subHero{
+    position: relative;
     display: flex;
     height: calc((175 /16 * 1rem) + ((600 - 175) * ((100vw - 320px) / (1920 - 320))));
-    background-color: brown;
+    /* background-color: brown; */
 
-    filter: grayscale(0.6);
+    /* filter: grayscale(0.6); */
+
+
 }
 
 
@@ -602,6 +613,22 @@ label{
     top: 10%;
 }
 
-.animals li{
-    list-style: circle;
+.animals ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+  
+.animals li {
+    display: flex;
+}
+  
+.animals li::before {
+    content: "\25CF";
+    margin-right: 0.5em; /* Adjust the spacing between the bullet and the text */
+}
+
+.header-logo-a{
+    width: min-content;
+    height: min-content;
 }
