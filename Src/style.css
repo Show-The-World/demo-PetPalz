@@ -478,7 +478,7 @@ footer > *{
     background-color: #63b5e5;
     padding: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
 
-    border-radius: 10px;
+    border-radius: calc((10 /16 * 1rem) + ((40 - 10) * ((100vw - 320px) / (1920 - 320))));
 }
 
 form *{
