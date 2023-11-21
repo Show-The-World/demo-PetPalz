@@ -241,10 +241,10 @@ ul{
 
 
 .about-img1, .about-img2{
-    border-radius: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: 5px;
 
-    filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.6));
-    -webkit-filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 06));
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.4));
 }
 
 
@@ -271,6 +271,7 @@ header{
     position: sticky;
     top: 0;
 }
+
 .header-hamburger-button{
     width: calc((22 /16 * 1rem) + ((70 - 22) * ((100vw - 320px) / (1920 - 320))));
     height: calc((3 /16 * 1rem) + ((10 - 3) * ((100vw - 320px) / (1920 - 320))));
@@ -377,6 +378,7 @@ header{
 
 
 .subHero-h1{
+    z-index: 1;
     position: relative;
     height: min-content;
     width: max-content;
@@ -386,27 +388,29 @@ header{
     color: var(--c-light);
     font-size: calc((25 /16 * 1rem) + ((130 - 25) * ((100vw - 320px) / (1920 - 320))));
 }
-.subHero-img{
-    object-fit: fill;
-    /* object-position: center; */
 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-}
 .subHero{
     position: relative;
     display: flex;
     height: calc((175 /16 * 1rem) + ((600 - 175) * ((100vw - 320px) / (1920 - 320))));
-    /* background-color: brown; */
 
-    /* filter: grayscale(0.6); */
-
-
+    background-position: center 12%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.subHero::after{
+    z-index: 0;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: black;
+    opacity: 0.65;
+}
+
 
 
 /*************************************************************************/
@@ -470,12 +474,11 @@ footer > *{
 .infoCard-h3{
     font-family: comfortaa;
 }
-
 .form-infoCard{
     background-color: #63b5e5;
     padding: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
 
-    border-radius: calc((10 /16 * 1rem) + ((40 - 10) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: 10px;
 }
 
 form *{
@@ -484,14 +487,14 @@ form *{
 
 .form-box{
     width: 100%;
-    height: calc((30 /16 * 1rem) + ((60 - 30) * ((100vw - 320px) / (1920 - 320))));
+    height: calc((30 /16 * 1rem) + ((50 - 30) * ((100vw - 320px) / (1920 - 320))));
 
     border-style: solid;
     border-width: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
     border-color: var(--c-blue);
-    border-radius: calc((7 /16 * 1rem) + ((14 - 7) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: 10px;
 
-    margin-bottom: calc((30 /16 * 1rem) + ((70 - 30) * ((100vw - 320px) / (1920 - 320))));
+    margin-bottom: calc((30 /16 * 1rem) + ((40 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
 
 label{
@@ -561,7 +564,7 @@ label{
 
 
 .animals > h2{
-    text-align: center;
+    text-align: left;
     margin-bottom: calc((30 /16 * 1rem) + ((30 - 30) * ((100vw - 320px) / (1920 - 320))));
 }
 .animals-container{
@@ -577,16 +580,21 @@ label{
     
     background-color: white;
     padding: calc((10 /16 * 1rem) + ((50 - 10) * ((100vw - 320px) / (1920 - 320))));
-    border-radius: calc((30 /16 * 1rem) + ((55 - 30) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: 15px;
 
-    -webkit-box-shadow: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--c-grey); 
-    box-shadow: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) var(--c-grey);
-    
     width: calc((280 /16 * 1rem) + ((500 - 280) * ((100vw - 320px) / (1920 - 320))));
 }
-
 .animals-subContainer h3{
-    text-align: center;
+    position: relative;
+}
+.animals-subContainer h3::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: -0.35em;
 }
 .animals-image{
     margin: auto;

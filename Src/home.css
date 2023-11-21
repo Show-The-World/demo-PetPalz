@@ -1,6 +1,5 @@
 .hero-container{
     flex: 1;
-
     margin-bottom: calc((60 /16 * 1rem) + ((130 - 60) * ((100vw - 320px) / (1920 - 320))));
 }
 .hero-image{
@@ -22,7 +21,7 @@
     top: 11%;
 
     filter: drop-shadow(9px 8px 17px rgba(0, 0, 0, 0.62));
-    -webkit-filter: drop-shadow(9px 8px 17px rgba(0, 0, 0, 0.62));
+    -webkit-filter: drop-shadow(20px 8px 12px rgba(0, 0, 0, 0.3));
 }
 
 @media screen and (max-width: 906px) {
@@ -83,11 +82,6 @@
 
 .love-img{
     width: 50%;
-
-    border-style: solid;
-    border-width: calc((10 /16 * 1rem) + ((13 - 10) * ((100vw - 320px) / (1920 - 320))));
-    border-color: var(--c-redDark);
-    border-radius: calc((3 /16 * 1rem) + ((30 - 3) * ((100vw - 320px) / (1920 - 320))));
 }
 
 .love-1{

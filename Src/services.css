@@ -1,7 +1,21 @@
 .serviceList-img{
     width: calc((100 /16 * 1rem) + ((420 - 100) * ((100vw - 320px) / (1920 - 320))));
     border-radius: 25px;
+}
 
+.serviceList-red .serviceList-img{
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-red); 
+    box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-red);
+}
+
+.serviceList-blue .serviceList-img{
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-blue); 
+    box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-blue);
+}
+
+.serviceList-green .serviceList-img{
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-green); 
+    box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-green);
 }
 
 .serviceList-image{
