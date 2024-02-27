@@ -430,8 +430,11 @@ footer > *{
 }
 
 .footer-nav{
+    margin: auto;
     margin-bottom: calc((40 /16 * 1rem) + ((90 - 40) * ((100vw - 320px) / (1920 - 320))));
+    width: fit-content;
 }
+
 .footer-a{
     display: block;
 

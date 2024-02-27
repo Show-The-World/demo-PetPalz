@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{ title }}</title>
+    <meta name="description" content="Show the World Digital: Where websites aren't just tools, they're your business's secret weapon. Quick-loading, SEO-smart, and tailored for Canadian small businesses. Expect more than just a pretty page – we deliver results without the fluff.">
+
+
+    <!-- Style Imports -->
+    <link rel="stylesheet" href="/styles/style.css">
+    {% block links %}
+    {% endblock %}
+
+
+    <!-- Font Imports -->
+
+
+    <!-- Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+
+<!-- Google tag (gtag.js) -->
+{# INSERT GOOGLE TAG #}
+
+
+<body>
+    {% if hasHeader | default(true) %}
+        {% include "layouts/header.njk" %}
+    {% endif %}
+
+
+    {% block content %}
+    {% endblock %}
+
+
+    {% if hasFooter | default(true) %}
+        {% include "layouts/footer.njk" %}
+    {% endif %}
+
+
+    <!-- Netlify Identity -->
+    <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+        }
+        });
+    }
+    </script>
+</body>
+</html>

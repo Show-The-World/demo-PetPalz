@@ -1,0 +1,88 @@
+.serviceList-img{
+    width: calc((100 /16 * 1rem) + ((420 - 100) * ((100vw - 320px) / (1920 - 320))));
+    border-radius: 25px;
+}
+
+.serviceList-red .serviceList-img{
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-red); 
+    box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-red);
+}
+
+.serviceList-blue .serviceList-img{
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-blue); 
+    box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-blue);
+}
+
+.serviceList-green .serviceList-img{
+    -webkit-box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-green); 
+    box-shadow: calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) calc((10 /16 * 1rem) + ((20 - 10) * ((100vw - 320px) / (1920 - 320)))) 0px 0px var(--c-green);
+}
+
+.serviceList-image{
+    height: min-content;
+}
+
+.serviceList-container{
+    flex: 1;
+    max-width: calc((200 /16 * 1rem) + ((800 - 200) * ((100vw - 320px) / (1920 - 320))));
+    display: flex;
+    flex-direction: column;
+
+    margin-left: calc((20 /16 * 1rem) + ((125 - 20) * ((100vw - 320px) / (1920 - 320))));
+
+    height: 100%;
+}
+
+.serviceList-card{
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.serviceList-seperator{
+    margin: calc((10 /16 * 1rem) + ((30 - 10) * ((100vw - 320px) / (1920 - 320)))) 0;
+
+    height: calc((1 /16 * 1rem) + ((2 - 1) * ((100vw - 320px) / (1920 - 320))));
+    width: 80%;
+}
+.serviceList-red .serviceList-seperator{
+    background-color: var(--c-redDark);
+}
+.serviceList-green .serviceList-seperator{
+    background-color: var(--c-greenDark);
+}
+.serviceList-blue .serviceList-seperator{
+    background-color: var(--c-blueDark);
+}
+
+.serviceList-right{
+    margin-left: calc((0 /16 * 1rem) + ((400 - 0) * ((100vw - 320px) / (1920 - 320))));
+}
+
+.serviceList a{
+    margin-top: auto;
+}
+
+.serviceList > :not(:last-child){
+    margin-bottom: calc((120 /16 * 1rem) + ((150 - 120) * ((100vw - 320px) / (1920 - 320))));
+}
+
+@media screen and (max-width:900px) {
+    .serviceList-card{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .serviceList-container{
+        width: 80%;
+        max-width: none;
+        margin: 0;
+        margin-top: calc((40 /16 * 1rem) + ((125 - 40) * ((100vw - 320px) / (1920 - 320))));
+    }
+
+    .serviceList-img{
+        margin: auto;
+        width: 80%;
+    }
+}
